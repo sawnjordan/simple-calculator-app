@@ -29,3 +29,57 @@ btnArr.forEach((item) => {
     }
   });
 });
+
+document.addEventListener("keydown", (e) => {
+  console.log(e);
+  e.preventDefault();
+  if (e.key == "1") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "2") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "3") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "4") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "5") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "6") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "7") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "8") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "9") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "0") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "/") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "*") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "%") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "-") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "+") {
+    inputChars += e.key;
+    inputBox.value = inputChars;
+  } else if (e.key == "Backspace") {
+    inputChars = inputChars.substring(0, inputChars.length - 1);
+    inputBox.value = inputChars;
+  }
+});

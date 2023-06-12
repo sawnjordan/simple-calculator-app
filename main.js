@@ -15,6 +15,7 @@ btnArr.forEach((item) => {
         inputBox.value = inputChars;
         break;
       case "DEL":
+        inputChars = String(inputChars);
         inputChars = inputChars.substring(0, inputChars.length - 1);
         inputBox.value = inputChars;
         break;
@@ -79,6 +80,7 @@ document.addEventListener("keydown", (e) => {
     inputChars += e.key;
     inputBox.value = inputChars;
   } else if (e.key == "Backspace") {
+    inputChars = String(inputChars);
     inputChars = inputChars.substring(0, inputChars.length - 1);
     inputBox.value = inputChars;
   } else if (e.key == "=") {

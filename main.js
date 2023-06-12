@@ -31,7 +31,7 @@ btnArr.forEach((item) => {
 });
 
 document.addEventListener("keydown", (e) => {
-  console.log(e);
+  // console.log(e);
   e.preventDefault();
   if (e.key == "1") {
     inputChars += e.key;
@@ -80,6 +80,9 @@ document.addEventListener("keydown", (e) => {
     inputBox.value = inputChars;
   } else if (e.key == "Backspace") {
     inputChars = inputChars.substring(0, inputChars.length - 1);
+    inputBox.value = inputChars;
+  } else if (e.key == "=") {
+    inputChars = eval(inputChars);
     inputBox.value = inputChars;
   }
 });
